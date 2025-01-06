@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #fff7f0;
   font-family: "Plus Jakarta Sans";
+}
+body {
+  background: #fff7f0;
 }
 .App {
   display: flex;
@@ -184,4 +186,40 @@
 }
 .btn img {
   background: transparent;
+}
+/*! Contact*/
+.contact {
+  background: #030303 !important;
+  color: #fff7f0;
+  max-width: 1000px;
+  margin: 90px auto;
+  padding: 72px 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+  border-radius: 8px;
+}
+.contact__info h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.contact__info p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 24px 0;
+  font-weight: 650;
+}
+.contact .btn {
+  font-weight: 800;
+  margin: 0 27px;
+  padding: 20px;
+  border-radius: 50px;
+  background: #eb7565;
+  color: #fff7f0;
+  width: 500px;
+}
+.contact .btn:hover {
+  background: #f39e9e;
+  transform: scale(1.1);
 }
