@@ -1,11 +1,27 @@
+:root {
+  --background-color: #fff7f0;
+  --primary-color: #755cde;
+  --secondary-color: #eb7565;
+  --text-color: #030303;
+  --font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+* {
+  font-family: var(--font-family);
+}
+
+body {
+  background: var(--background-color);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Plus Jakarta Sans";
+  font-family: var(--font-family);
 }
 body {
-  background: #fff7f0;
+  background: var(--background-color);
 }
 .App {
   display: flex;
@@ -25,16 +41,17 @@ body {
   height: 64px;
 }
 .navbar .btn {
-  background: #030303;
-  color: #fff7f0;
+  background: var(--text-color);
+  color: var(--background-color);
   font-weight: 700;
   padding: 0 30px;
   border: 2px solid;
   border-radius: 50px;
 }
 .navbar .btn:hover {
-  background: #755cde;
+  background: var(--primary-color);
   transform: scale(1.1);
+  transition: transform 0.5s ease-out;
 }
 .header {
   display: flex;
@@ -58,8 +75,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 100px;
+  max-width: 1100px;
+  margin: 0 auto;
   height: 388px;
 }
 
@@ -67,37 +84,36 @@ body {
   border-radius: 8px;
   position: relative;
   padding: 20px;
+  color: var(--background-color);
+}
+.skill:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 .skill_1 {
   grid-row: span 2;
   width: 333px;
-  background: #755cde;
-  color: #fff7f0;
+  background: var(--primary-color);
 }
 .skill_2 {
   background: #f6a560;
-  color: #fff7f0;
-  width: 155px;
+  width: 181px;
 }
 .skill_3 {
   background: #f39e9e;
-  color: #fff7f0;
-  width: 155px;
+  width: 181px;
 }
 .skill_4 {
   background: #61c4b7;
-  color: #fff7f0;
   width: 337px;
 }
 .skill_5 {
   background: #552049;
-  color: #fff7f0;
-  width: 337px;
+  width: 385px;
   grid-column: span 2;
 }
 .skill_6 {
-  background: #eb7565;
-  color: #fff7f0;
+  background: var(--secondary-color);
   width: 337px;
 }
 .skill h2 {
@@ -126,6 +142,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .about__me h2 {
   font-size: 32px;
@@ -143,13 +160,14 @@ body {
   padding: 15px;
   border: 2px solid;
   border-radius: 50px;
-  background: #eb7565;
-  color: #fff7f0;
+  background: var(--secondary-color);
+  color: var(--background-color);
   width: 250px;
 }
 .about__me .btn:hover {
   background: #f39e9e;
   transform: scale(1.1);
+  transition: transform 0.5s ease-out;
 }
 /*! Work*/
 .work {
@@ -171,8 +189,8 @@ body {
   gap: 20px;
 }
 .work__btn .btn {
-  background: #030303;
-  color: #fff7f0;
+  background: var(--text-color);
+  color: var(--background-color);
   font-weight: 700;
   padding: 24px;
   border: 2px solid;
@@ -181,23 +199,24 @@ body {
   height: 80px;
 }
 .work__btn .btn:hover {
-  background: #755cde;
+  background: var(--primary-color);
   transform: scale(1.1);
+  transition: transform 0.5s ease-out;
 }
 .btn img {
   background: transparent;
 }
 /*! Contact*/
 .contact {
-  background: #030303 !important;
-  color: #fff7f0;
+  background: var(--text-color) !important;
+  color: var(--background-color);
   max-width: 1000px;
   margin: 90px auto;
   padding: 72px 65px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 150px;
+  gap: 50px;
   border-radius: 8px;
 }
 .contact__info h2 {
@@ -215,13 +234,14 @@ body {
   margin: 0 27px;
   padding: 20px;
   border-radius: 50px;
-  background: #eb7565;
-  color: #fff7f0;
-  width: 500px;
+  background: var(--secondary-color);
+  color: var(--background-color);
+  width: 200px;
 }
 .contact .btn:hover {
   background: #f39e9e;
   transform: scale(1.1);
+  transition: transform 0.5s ease-out;
 }
 /*! Footer */
 .footer {
@@ -235,14 +255,130 @@ body {
   height: 64px;
 }
 .footer .btn {
-  background: #030303;
-  color: #fff7f0;
+  background: var(--text-color);
+  color: var(--background-color);
   font-weight: 700;
   padding: 0 30px;
   border: 2px solid;
   border-radius: 50px;
 }
 .footer .btn:hover {
-  background: #755cde;
+  background: var(--primary-color);
   transform: scale(1.1);
+  transition: transform 0.5s ease-out;
 }
+@media (max-width: 1105px) {
+  .skills {
+    gap: 0.8rem;
+    max-width: 692px;
+    height: 400px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .skill {
+    padding: 10px;
+  }
+  .skill_1 {
+    grid-row: span 3;
+    width: 333px;
+  }
+  .skill_2 {
+    width: 337px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .skill_3 {
+    width: 337px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .skill_4 {
+    grid-column: 2;
+    grid-row: 3;
+    width: 337px;
+  }
+  .skill_5 {
+    width: 333px;
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .skill_6 {
+    grid-column: 2;
+    grid-row: 4;
+    width: 333px;
+  }
+  .skill_5 img,
+  .skill_6 img {
+    width: 110px;
+    height: 64px;
+  }
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about__me {
+    justify-content: center;
+  }
+  .contact {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 30px;
+  }
+}
+@media (max-width: 690px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+    max-width: 1100px;
+    height: 1000px;
+  }
+  .skill_1 {
+    grid-column: 1;
+    grid-row: 1;
+    width: 315px;
+  }
+  .skill_1 img {
+    width: 110px;
+    height: 110px;
+  }
+  .skill_2 {
+    width: 315px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .skill_3 {
+    width: 315px;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .skill_4 {
+    grid-column: 1;
+    grid-row: 4;
+    width: 315px;
+  }
+  .skill_5 {
+    width: 315px;
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .skill_6 {
+    grid-column: 1;
+    grid-row: 6;
+    width: 315px;
+  }
+}
+@media (max-width: 540px) {
+  .navbar {
+    margin: 0 40px;
+  }
+  .footer {
+    margin: 0 40px;
+  }
+  .work__img {
+    width: 300px;
+  }
+}
+Responsiveness

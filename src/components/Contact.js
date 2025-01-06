@@ -10,7 +10,9 @@ function Contact() {
             consultation. Then we can move forward from there.
           </p>
         </div>
-        <button className="btn">Free consultation</button>
+        <div>
+          <button className="btn">Free consultation</button>
+        </div>
       </div>
     </>
   );
