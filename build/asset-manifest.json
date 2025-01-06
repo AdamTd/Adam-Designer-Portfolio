@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.07664eb2.css",
+    "main.js": "/static/js/main.b18d457b.js",
+    "static/media/image-amy.webp": "/static/media/image-amy.7da98e7720cf2d1467d1.webp",
+    "static/media/logo.png": "/static/media/logo.09866ec5ffec0d908cb7.png",
+    "static/media/image-slide-3.jpg": "/static/media/image-slide-3.98a0b68a0c22e4f588e2.jpg",
+    "static/media/image-slide-1.jpg": "/static/media/image-slide-1.8fe92b077c926e6273db.jpg",
+    "static/media/image-slide-4.jpg": "/static/media/image-slide-4.27764d55c15f1241e9bf.jpg",
+    "static/media/image-slide-5.jpg": "/static/media/image-slide-5.9382e7075b7fb6b5198b.jpg",
+    "static/media/image-slide-2.jpg": "/static/media/image-slide-2.f0a8e46e453dc2c6d235.jpg",
+    "static/media/pattern-graphic-design.svg": "/static/media/pattern-graphic-design.9a6e56bc8a173b7c4040c91151fd7670.svg",
+    "index.html": "/index.html",
+    "static/media/pattern-illustrations.svg": "/static/media/pattern-illustrations.14f5b1d2c7935111bba9043f4cf2051e.svg",
+    "static/media/pattern-photography.svg": "/static/media/pattern-photography.41af493d4ba2f69b230266ac6a9184c9.svg",
+    "static/media/pattern-motion-graphics.svg": "/static/media/pattern-motion-graphics.9186d787a32a6653085008ad0de70780.svg",
+    "static/media/pattern-apps.svg": "/static/media/pattern-apps.ee7a4747a8a7117f4cce78d8f443e4a6.svg",
+    "static/media/pattern-ui-ux.svg": "/static/media/pattern-ui-ux.19247b7d3a6c0f9e1b7593af951b2773.svg",
+    "static/media/icon-arrow-right.svg": "/static/media/icon-arrow-right.dc94be1ff3d2abe01d83af8d931d31aa.svg",
+    "static/media/icon-arrow-left.svg": "/static/media/icon-arrow-left.4dc941849919da80482b072e26ed445b.svg",
+    "main.07664eb2.css.map": "/static/css/main.07664eb2.css.map",
+    "main.b18d457b.js.map": "/static/js/main.b18d457b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07664eb2.css",
+    "static/js/main.b18d457b.js"
+  ]
+}

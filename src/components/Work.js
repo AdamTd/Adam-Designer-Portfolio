@@ -15,10 +15,16 @@ function Work() {
     if (currentSlide < slide.length - 1) {
       setCurrentSlide(currentSlide + 1);
     }
+    if (currentSlide + 1 >= slide.length) {
+      setCurrentSlide(0);
+    }
   }
   function prevSlide() {
     if (currentSlide > 0) {
       setCurrentSlide(currentSlide - 1);
+    }
+    if (currentSlide <= 0) {
+      setCurrentSlide(slide.length - 1);
     }
   }
   return (
