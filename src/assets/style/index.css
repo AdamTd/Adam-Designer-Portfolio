@@ -30,6 +30,10 @@
   border: 2px solid;
   border-radius: 50px;
 }
+.navbar .btn:hover {
+  background: #755cde;
+  transform: scale(1.2);
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -105,3 +109,43 @@
   right: 15px;
 }
 /*! About */
+
+.about {
+  display: flex;
+  max-width: 1200px;
+  margin: 130px 100px;
+  gap: 10px;
+}
+.about img {
+  width: 300px;
+}
+.about__me {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.about__me h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 27px;
+}
+.about__me p {
+  margin: 27px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.about__me .btn {
+  font-weight: 700;
+  margin: 0 27px;
+  padding: 15px;
+  border: 2px solid;
+  border-radius: 50px;
+  background: #eb7565;
+  color: #fff7f0;
+  width: 250px;
+}
+.about__me .btn:hover {
+  background: #f39e9e;
+  transform: scale(1.2);
+}
