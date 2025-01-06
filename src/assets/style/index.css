@@ -32,7 +32,7 @@
 }
 .navbar .btn:hover {
   background: #755cde;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .header {
   display: flex;
@@ -147,5 +147,41 @@
 }
 .about__me .btn:hover {
   background: #f39e9e;
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+/*! Work*/
+.work {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.work h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.work__btn {
+  margin: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.work__btn .btn {
+  background: #030303;
+  color: #fff7f0;
+  font-weight: 700;
+  padding: 24px;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.work__btn .btn:hover {
+  background: #755cde;
+  transform: scale(1.1);
+}
+.btn img {
+  background: transparent;
 }
