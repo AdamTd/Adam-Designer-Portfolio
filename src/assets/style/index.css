@@ -2,4 +2,106 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: #fff7f0;
+  font-family: "Plus Jakarta Sans";
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+/*! Home */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+  padding: 16px 0 32px;
+}
+.navbar img {
+  width: 64px;
+  height: 64px;
+}
+.navbar .btn {
+  background: #030303;
+  color: #fff7f0;
+  font-weight: 700;
+  padding: 0 30px;
+  border: 2px solid;
+  border-radius: 50px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+.header h1 {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+}
+.header p {
+  text-align: center;
+  margin-top: 27px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 100px;
+  height: 388px;
+}
+
+.skill {
+  border-radius: 8px;
+  position: relative;
+  padding: 20px;
+}
+.skill_1 {
+  grid-row: span 2;
+  width: 333px;
+  background: #755cde;
+  color: #fff7f0;
+}
+.skill_2 {
+  background: #f6a560;
+  color: #fff7f0;
+  width: 155px;
+}
+.skill_3 {
+  background: #f39e9e;
+  color: #fff7f0;
+  width: 155px;
+}
+.skill_4 {
+  background: #61c4b7;
+  color: #fff7f0;
+  width: 337px;
+}
+.skill_5 {
+  background: #552049;
+  color: #fff7f0;
+  width: 337px;
+  grid-column: span 2;
+}
+.skill_6 {
+  background: #eb7565;
+  color: #fff7f0;
+  width: 337px;
+}
+.skill h2 {
+  background: transparent;
+  position: absolute;
+  bottom: 20px;
+}
+.skill img {
+  background: transparent;
+  position: absolute;
+  right: 15px;
+}
+/*! About */
